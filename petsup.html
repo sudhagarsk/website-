@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Supplies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        .hero {
+            background-image: url('./images/download (13).jpeg'); /* Replace with your hero image */
+            background-size: cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+        .product-card {
+            margin-bottom: 20px;
+            transition: transform 0.3s; /* Smooth scale effect */
+        }
+        .product-card:hover {
+            transform: scale(1.05); /* Scale up on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <!-- <h1>Your One-Stop Pet Supplies Store</h1>
+        <p>Quality products for your furry friends!</p>
+        <a href="#" class="btn btn-primary">Shop Now</a> -->
+    </div>
+
+    <!-- Products Gallery -->
+
+  
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row">
+            <!-- Product Card 1 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="./images/download (10).jpeg" class="card-img-top" alt="Dog Food"> <!-- Replace with actual product image -->
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Dog Food</h5>
+                        <p class="card-text">Nutrition-packed food for your beloved dog.</p>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="./images/download (12).jpeg" class="card-img-top" alt="Cat Toy"> <!-- Replace with actual product image -->
+                    <div class="card-body">
+                        <h5 class="card-title">Cat Toy - Interactive Ball</h5>
+                        <p class="card-text">Keep your cat entertained with this fun toy.</p>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="./images/download (1).jpeg" class="card-img-top" alt="Dog Leash"> <!-- Replace with actual product image -->
+                    <div class="card-body">
+                        <h5 class="card-title">Durable Dog Leash</h5>
+                        <p class="card-text">A sturdy leash for your daily walks.</p>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
